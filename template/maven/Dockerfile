@@ -7,7 +7,7 @@ ENV SPARK_APPLICATION_JAR_LOCATION /app/application.jar
 
 COPY template.sh /
 
-RUN apk add --no-cache openjdk8 maven\
+RUN apk add --no-cache openjdk17 maven\
       && chmod +x /template.sh \
       && mkdir -p /app \
       && mkdir -p /usr/src/app

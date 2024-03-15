@@ -19,7 +19,7 @@ COPY finish-step.sh /
 RUN apk add --no-cache curl bash openjdk17-jdk python3 py-pip nss libc6-compat coreutils procps ca-certificates \
       && ln -s /lib64/ld-linux-arm64.so.2 /lib/ld-linux-arm64.so.2 \
       && chmod +x *.sh \
-      && wget --auth-no-challenge ${BASE_URL}/spark-${SPARK_VERSION}/spark-${SPARK_VERSION}-bin-hadoop${HADOOP_VERSION}.tgz \
+      && wget --no-check-certificate ${BASE_URL}/spark-${SPARK_VERSION}/spark-${SPARK_VERSION}-bin-hadoop${HADOOP_VERSION}.tgz \
       && tar -xvzf spark-${SPARK_VERSION}-bin-hadoop${HADOOP_VERSION}.tgz \
       && mv spark-${SPARK_VERSION}-bin-hadoop${HADOOP_VERSION} spark \
       && rm spark-${SPARK_VERSION}-bin-hadoop${HADOOP_VERSION}.tgz \
