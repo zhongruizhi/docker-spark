@@ -17,7 +17,7 @@ COPY finish-step.sh /
 #COPY bde-spark.css /css/org/apache/spark/ui/static/timeline-view.css
 
 RUN apk add --no-cache curl bash openjdk17-jdk python3 py-pip nss libc6-compat coreutils procps ca-certificates \
-      && ln -s /lib64/ld-linux-aarch64.so.1 /lib/ld-linux-aarch64.so.1 \
+      #&& ln -s /lib64/ld-linux-aarch64.so.1 /lib/ld-linux-aarch64.so.1 \
       && chmod +x *.sh \
       && wget --no-check-certificate ${BASE_URL}/spark-${SPARK_VERSION}/spark-${SPARK_VERSION}-bin-hadoop${HADOOP_VERSION}.tgz \
       && tar -xvzf spark-${SPARK_VERSION}-bin-hadoop${HADOOP_VERSION}.tgz \
