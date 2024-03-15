@@ -1,6 +1,6 @@
-FROM bde2020/spark-base:3.3.0-hadoop3.3
+FROM ruizhizhong058/spark-base:3.5.1-hadoop3.3.6
 
-LABEL maintainer="Gezim Sejdiu <g.sejdiu@gmail.com>, Giannis Mouchakis <gmouchakis@gmail.com>"
+LABEL maintainer="Ruizhi Zhong <ruizhi.zhong@zoom.us>"
 
 COPY worker.sh /
 

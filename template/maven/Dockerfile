@@ -1,6 +1,6 @@
-FROM bde2020/spark-submit:3.3.0-hadoop3.3
+FROM ruizhizhong058/spark-submit:3.5.1-hadoop3.3.6
 
-LABEL maintainer="Gezim Sejdiu <g.sejdiu@gmail.com>, Giannis Mouchakis <gmouchakis@gmail.com>"
+LABEL maintainer="Ruizhi Zhong <ruizhi.zhong@zoom.us>"
 
 ENV SPARK_APPLICATION_JAR_NAME application-1.0
 ENV SPARK_APPLICATION_JAR_LOCATION /app/application.jar
