@@ -3,7 +3,7 @@ FROM ruizhizhong058/spark-submit:3.5.1-hadoop3.3.6
 LABEL maintainer="Ruizhi Zhong <ruizhi.zhong@zoom.us>"
 
 ARG SBT_VERSION
-ENV SBT_VERSION=${SBT_VERSION:-1.6.2}
+ENV SBT_VERSION=${SBT_VERSION:-1.9.9}
 
 RUN wget -O - https://github.com/sbt/sbt/releases/download/v${SBT_VERSION}/sbt-${SBT_VERSION}.tgz | gunzip | tar -x -C /usr/local
 
