@@ -1,6 +1,6 @@
-FROM ruizhizhong058/spark-submit:3.5.1-hadoop3.3.6
+FROM zhongruizhi/spark-submit:3.5.1-hadoop3.3.6-amd64
 
-LABEL maintainer="Ruizhi Zhong <ruizhi.zhong@zoom.us>"
+LABEL maintainer="Ruizhi Zhong <ruizhi.zhong@outlook.com>"
 
 ARG SBT_VERSION
 ENV SBT_VERSION=${SBT_VERSION:-1.9.9}

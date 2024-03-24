@@ -1,4 +1,4 @@
-FROM ruizhizhong058/spark-python-template:3.5.1-hadoop3.3.6
+FROM zhongruizhi/spark-python-template:3.5.1-hadoop3.3.6-amd64
 	  
 COPY wordcount.py /app/
 

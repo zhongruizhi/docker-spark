@@ -2,11 +2,11 @@
 
 set -e
 
-TAG=3.5.1-hadoop3.3.6
+TAG=3.5.1-hadoop3.3.6-amd64
 
 build() {
     NAME=$1
-    IMAGE=ruizhizhong058/spark-$NAME:$TAG
+    IMAGE=zhongruizhi/spark-$NAME:$TAG
     cd $([ -z "$2" ] && echo "./$NAME" || echo "$2")
     echo '--------------------------' building $IMAGE in $(pwd)
     docker build -t $IMAGE .

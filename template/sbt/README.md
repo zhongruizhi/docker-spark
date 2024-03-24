@@ -11,7 +11,7 @@ for a description how to setup a Spark cluster.
 spark-shell:
 
 ```
-docker run -it --rm ruizhizhong058/spark-sbt-template sbt console
+docker run -it --rm zhongruizhi/spark-sbt-template sbt console
 ```
 
 You can also use directly your Docker image and test your own code that way.
@@ -62,7 +62,7 @@ the `/template.sh` script at the end.
 #### Example Dockerfile
 
 ```
-FROM ruizhizhong058/spark-sbt-template:3.5.1-hadoop3.3.6
+FROM zhongruizhi/spark-sbt-template:3.5.1-hadoop3.3.6-amd64
 
 MAINTAINER Cecile Tonglet <cecile.tonglet@tenforce.com>
 
