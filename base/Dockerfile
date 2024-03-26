@@ -1,6 +1,6 @@
 FROM alpine:3.19.1
 
-LABEL maintainer="Ruizhi Zhong <ruizhi.zhong@zoom.us>"
+LABEL maintainer="Ruizhi Zhong <ruizhi.zhong@outlook.com>"
 
 ENV ENABLE_INIT_DAEMON false
 ENV INIT_DAEMON_BASE_URI http://identifier/init-daemon

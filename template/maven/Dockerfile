@@ -1,6 +1,6 @@
-FROM ruizhizhong058/spark-submit:3.5.1-hadoop3.3.6
+FROM zhongruizhi/spark-submit:3.5.1-hadoop3.3.6-aarch64
 
-LABEL maintainer="Ruizhi Zhong <ruizhi.zhong@zoom.us>"
+LABEL maintainer="Ruizhi Zhong <ruizhi.zhong@outlook.com>"
 
 ENV SPARK_APPLICATION_JAR_NAME application-1.0
 ENV SPARK_APPLICATION_JAR_LOCATION /app/application.jar

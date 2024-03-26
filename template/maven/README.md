@@ -34,10 +34,10 @@ If you overwrite the template's `CMD` in your Dockerfile, make sure to execute t
 
 #### Example Dockerfile
 ```
-FROM ruizhizhong058/spark-maven-template:3.5.1-hadoop3.3.6
+FROM zhongruizhi/spark-maven-template:3.5.1-hadoop3.3.6-aarch64
 
 MAINTAINER Erika Pauwels <erika.pauwels@tenforce.com>
-MAINTAINER Ruizhi Zhong <ruizhi.zhong@zoom.us>
+MAINTAINER Ruizhi Zhong <ruizhi.zhong@outlook.com>
 
 ENV SPARK_APPLICATION_JAR_NAME my-app-1.0-SNAPSHOT-with-dependencies
 ENV SPARK_APPLICATION_MAIN_CLASS eu.bde.my.Application
